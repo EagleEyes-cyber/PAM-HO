@@ -1,10 +1,3 @@
-// Hands-on 3: Loops, Ranges & Null Safety
-// Tugas: Lengkapi ScoreBoard agar bisa menyaring skor yang valid (bukan null)
-// dan berada dalam batas kelulusan, lalu tampilkan bilangan ganjil dengan loop.
-//
-// CATATAN: File ini belum bisa dijalankan (belum bisa di-compile) sampai kamu
-// melengkapi semua TODO di bawah — itu normal untuk latihan ini!
-
 class ScoreBoard(private val skorMentah: List<Int?>) {
     
     val skorValid: List<Int> = skorMentah.filterNotNull()
@@ -27,7 +20,3 @@ fun main() {
 
     cetakRentangGanjil(10)
 }
-
-// Output yang diharapkan:
-// Skor lulus (>= 70): [100, 90, 85, 72]
-// 1 3 5 7 9
